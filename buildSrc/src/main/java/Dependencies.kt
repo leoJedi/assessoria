@@ -23,10 +23,10 @@ object Plugins {
     const val android = "android"
     const val androidLibrary = "com.android.library"
     const val androidApplication = "com.android.application"
-    //const val kotlinJetbrains = "org.jetbrains.kotlin.android"
     const val kotlin = "kotlin"
     const val multiplatform = "multiplatform"
-//org.jetbrains.kotlin.android
+    const val androidFirebase = "com.google.gms.google-services"
+
 
 }
 
@@ -58,6 +58,8 @@ object Versions {
     const val toolBuildGrade = "7.4.1"
     const val uiautomator = "2.3.0-alpha02"
     const val testeRunVersion = "1.5.2"
+    const val versionFirebase = "4.4.0"
+    const val boomVersion = "32.3.1"
 
 
 
@@ -74,6 +76,15 @@ object Androidx {
     const val coreTesteKtx = "androidx.test:core-ktx:${Versions.androidxCoreTesteKtx}"
     const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}"
 }
+
+object Firebase{
+    const val firebaseConfig = "com.google.firebase:firebase-bom:${Versions.boomVersion}"
+    const val firebaseDataBase = "com.google.firebase:firebase-database-ktx"
+
+
+}
+
+
 object Compose {
     const val activity = "androidx.activity:activity-compose:${Versions.composeActivity}"
     const val foundation = "androidx.compose.foundation:foundation:${Versions.compose}"

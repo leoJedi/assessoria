@@ -17,6 +17,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.com.empresa.common.Greeting
+import com.google.firebase.ktx.Firebase
+
 
 @Composable
 fun MyApplicationTheme(
@@ -59,6 +61,7 @@ fun MyApplicationTheme(
 }
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

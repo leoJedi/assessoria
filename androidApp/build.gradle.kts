@@ -1,6 +1,6 @@
 plugins {
+    id(Plugins.androidFirebase)
     id(Plugins.androidApplication)
-   // id(Plugins.kotlinJetbrains)
     kotlin(Plugins.android)
 }
 
@@ -49,7 +49,7 @@ android {
     buildFeatures {
         compose = true
     }
-    @
+
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.composeCompiler
     }
@@ -61,7 +61,7 @@ android {
 
 }
 
-dependencies {
+dependencies{
     implementation(project(":shared"))
 
     // CORE
@@ -99,6 +99,7 @@ dependencies {
 
     // COMPOSE NAVIGATION
     implementation(Compose.navigation)
+    implementation("com.google.firebase:firebase-common-ktx:20.4.2")
 
     // UNIT TEST
    testImplementation(Test.junit)
@@ -110,7 +111,9 @@ dependencies {
     androidTestImplementation(TestUi.uiAutomator)
     androidTestImplementation(TestUi.testeRun)
 
-
+    //Firebase
+    implementation(platform(Firebase.firebaseConfig))
+    implementation(Firebase.firebaseDataBase)
 
 
     // DEBUGGING
