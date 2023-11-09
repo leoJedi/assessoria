@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781344087352",
+    "project_id": "assessoria-52d72",
+    "storage_bucket": "assessoria-52d72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781344087352:android:bfe73d83b716ae28b775cd",
+        "android_client_info": {
+          "package_name": "br.com.empresa.nomeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoZ65303VcxaO_Gu3qU-r9y6H91uErf9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
